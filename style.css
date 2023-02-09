@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --bg-color: rgb(2, 2, 2);
+  --text: rgb(248, 245, 245);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text);
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,0,0,0.540569504168855) 0%, rgba(0,0,0,0.6643790279783788) 80%, rgba(0,0,0,1) 100%); 
+}
+
+.header video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav .nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header nav .nav-menu.active{
+  left: 0%;
+}
+
+.header nav .nav-menu li {
+  padding: 1rem;
+}
+
+.header nav .nav-menu li a {
+  color: rgba(255, 255, 255, 0.865);
+  text-decoration: none;
+}
+
+.header nav .nav-menu li a:hover {
+  color: white;
+}
+
+.header .logo {
+  font-size: 2rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.header .hambtn {
+  font-size: 2rem;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.header .head-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .head-content h2 {
+  font-size: 3.6rem;
+  margin: 0.8rem 0;
+}
+
+.header .head-content p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.865);
+  margin: 0.8rem 0;
+}
+
+/* Explore */
+
+.explore {
+  margin: 0.8rem auto;
+  text-align: center;
+}
+
+.explore h2 {
+  font-size: 2.4rem;
+  margin: 0.8rem auto;
+  max-width: 30rem;
+}
+
+.explore p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.865);
+  margin: 0.8rem auto;
+  max-width: 30rem;
+}
+
+.explore .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.explore .items > div {
+  width: 22rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.77));
+  position: relative;
+}
+
+.explore .items .item-1 img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+.explore .items .item-2 img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+.explore .items .item-3 img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.explore .items h2 {
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+}
+
+.explore .items h3 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.865);
+}
+
+.explore .see-more span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2200CC;
+  cursor: pointer;
+}
+
+.explore .see-more span:hover {
+  color: #0044CC;
+}
+
+.journal {
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.journal .journal-content {
+  text-align: center;
+  margin: 0.8rem auto;
+  max-width: 30rem;
+}
+
+.journal .journal-content h2 {
+  font-size: 3.6rem;
+  padding: 0.8rem 0;
+}
+
+.journal .journal-content p {
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  color: rgba(255, 255, 255, 0.865);
+}
+
+.journal .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  gap: 2rem;
+}
+
+.journal .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.journal .items .item img {
+  width: 30rem;
+  height: 18rem;
+  border-radius: 0.4rem;
+}
+
+.journal .items .item .item-text h3 {
+  font-size: 2.4rem;
+}
+
+.journal .items .item .text-para {
+  max-width: 30rem;
+  color: rgba(255, 255, 255, 0.865);
+  font-size: 1.2rem;
+}
+
+.journal .see-more {
+  padding: 0.8rem 0;
+}
+
+.journal .see-more span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2200CC;
+  cursor: pointer;
+}
+
+.journal .see-more span:hover {
+  color: #0044CC;
+}
+
+.vignette {
+  width: 100%;
+  height: 40vh;
+  box-shadow: inset 0 0 50px 40px black;
+  background-image: url("assets/decd3db0a98ff270027030dd3a6138ea-hd2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .links {
+  display: flex;
+}
+.footer .links li {
+  padding: 0.8rem;
+}
+.footer .links a {
+  color: rgba(255, 255, 255, 0.865);
+  text-decoration: none;
+}
+.footer .links a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  .header .head-content h2{
+    min-width: 37rem;
+    text-align: center;
+  }
+  .header .head-content p{
+    text-align: center;
+  }
+  .explore p {
+    max-width: 50rem;
+  }
+  .explore .items {
+    flex-direction: row;
+    justify-content: center;
+    margin: 4rem 1.5rem;
+  }
+  .journal .journal-content {
+    max-width: 50rem;
+  }
+  .journal .items {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .vignette {
+    height: 60vh;
+  }
+  .footer {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .footer .copyright::after {
+    content: "|";
+    position: absolute;
+    left: 0px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .header .head-content h2{
+    font-size: 4.8rem;
+  }
+  .header nav .nav-menu{
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,2,31,0.9394490559895833) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .5s ease-in-out;
+  }
+}
+
+@media screen and (min-width:1023px){
+  .header .hambtn{
+    display: none;
+  }
+  .header nav .nav-menu li {
+    padding: 2rem;
+  }
+  .explore .items{
+    gap: 4rem;
+  }
+  .journal .items {
+    gap: 10rem;
+  }
+  .vignette{
+    height: 80vh;
+  }
+}
